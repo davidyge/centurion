@@ -220,3 +220,22 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+/****gaby deslizar */
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+  const question = item.querySelector('.faq-question');
+
+  question.addEventListener('click', () => {
+    // Cerrar todos los otros items antes de abrir el actual
+    faqItems.forEach(i => {
+      if (i !== item) {
+        i.classList.remove('active');
+      }
+    });
+    
+    // Alternar la clase 'active' solo para el item seleccionado
+    item.classList.toggle('active');
+  });
+});
