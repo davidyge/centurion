@@ -1,0 +1,36 @@
+#fila1{
+    border-bottom: 2px solid #ff0000; /* Línea inferior en cada columna */
+    padding-bottom: 10px; /* Espacio debajo del contenido antes de la línea */
+    margin-bottom: 10px; /* Espacio debajo de la línea para separar las columnas */
+
+}
+.desc {
+    /* Estilo general para la descripción */
+    font-size: 1rem; /* Tamaño de fuente general */
+  }
+  
+.desc .tit {
+    font-size: 1rem; /* Tamaño de fuente del título */
+    margin-bottom: 0.5rem; /* Espaciado debajo del título */
+    
+  }
+  
+.desc .sub {
+    font-weight: bold; /* Hacer el texto del título en negrita */
+    font-size: 1.6rem; /* Tamaño de fuente para la ubicación */
+    line-height: 1.0; /* Ajustar el espaciado entre líneas */
+  }
+
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Tamaño del círculo */
+    height: 50px; /* Tamaño del círculo */
+    border-radius: 50%; /* Hace que el contenedor sea circular */
+    background-color: #f0f0f0; /* Color de fondo del círculo */
+    border: 2px solid #000; /* Borde del círculo */
+    font-size: 24px; /* Tamaño del ícono */
+    color: #000; /* Color del ícono */
+    margin-right: 10px;
+  }
