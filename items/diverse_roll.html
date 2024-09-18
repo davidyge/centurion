@@ -27,6 +27,7 @@
   <!-- Main CSS File -->
   <link href="../assets/css/main.css" rel="stylesheet">
 
+
   <!-- =======================================================
   * Template Name: Multi
   * Template URL: https://bootstrapmade.com/multi-responsive-bootstrap-template/
@@ -71,7 +72,11 @@
       </nav>
 
       <a class="btn-getstarted" href="#about">Get Started</a>
-
+        <!-- Switch para cambiar idioma -->
+        <div class="form-check form-switch ms-auto">
+          <input class="form-check-input" type="checkbox" id="languageSwitch">
+          <label class="form-check-label" for="languageSwitch">ES - ENG</label>
+        </div>
     </div>
   </header>
 
@@ -85,7 +90,7 @@
               <img src="../assets/img/logomini.svg" alt="Icon" style="width: 30px; height: 30px; margin-right: 10px;">
               <h1>Residential Garage Doors</h1>
               </div>
-              <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+              <p class="mb-0">The service of selling and installing residential steel, insulated, and glass garage doors from Centurion Overhead Doors in Houston, Texas, is distinguished by providing a diverse range of high-quality and customizable solutions for homes in the area. The company specializes in offering garage doors that not only prioritize durability and security, as with steel doors, but also incorporate insulation and glass elements for enhanced functionality and aesthetic appeal.</p>
             </div>
           </div>
         </div>
@@ -106,10 +111,16 @@
         </nav>
       </div>
       <br>
-    <div class="product-container" data-aos="fade-up">
-      <div class="text-section" data-aos="fade-up">
-        <h1>Diverse Commercial Door Options</h1>
-        <p>Centurion Overhead Doors offers a variety of commercial garage doors, including roll-up, rolling steel, and fire-rated doors. This diversity allows businesses to choose doors that suit their specific requirements, whether it's for increased security, efficient space utilization, or fire protection.</p>
+      <div class="product-container" data-aos="fade-up">
+        <div class="text-section" data-aos="fade-up">
+          <div class="content en">
+            <h1>Diverse Commercial Door Options</h1>
+            <p>Centurion Overhead Doors offers a variety of commercial garage doors, including roll-up, rolling steel, and fire-rated doors. This diversity allows businesses to choose doors that suit their specific requirements, whether it's for increased security, efficient space utilization, or fire protection.</p>
+          </div>
+          <div class="content es">
+            <h1>Diversas Opciones de Puertas Comerciales</h1>
+            <p>Centurion Overhead Doors ofrece una variedad de puertas de garaje comerciales, incluidas puertas enrollables, de acero y contra incendios. Esta diversidad permite a las empresas elegir puertas que se adapten a sus requisitos específicos, ya sea para mayor seguridad, utilización eficiente del espacio o protección contra incendios.</p>
+          </div>
       </div>
     <div class="image-section" data-aos="fade-up">
         <img src="../assets/img/roll/p1.webp" alt="Eden Coast by Raynor Garage Door">
@@ -120,14 +131,22 @@
       <div class="column">
           <div class="info-item">
               <img src="../assets/img/icons/durability.svg" alt="Icono Durabilidad">
-              <div>
+              <div class="content en">
+                  <h3>Durability</h3>
+                  <p>Our steel doors are built to withstand daily wear and extreme weather conditions.</p>
+              </div>
+              <div class="content es">
                   <h3>Durabilidad</h3>
                   <p>Nuestras puertas de acero están construidas para resistir el desgaste diario y las condiciones climáticas extremas.</p>
               </div>
           </div>
           <div class="info-item">
               <img src="../assets/img/icons/security.svg" alt="Icono Seguridad">
-              <div>
+              <div class="content en">
+                  <h3>Security</h3>
+                  <p>Equipped with advanced locking systems and security sensors to protect your home.</p>
+              </div>
+              <div class="content es">
                   <h3>Seguridad</h3>
                   <p>Equipadas con sistemas avanzados de bloqueo y sensores de seguridad para proteger tu hogar.</p>
               </div>
@@ -136,15 +155,23 @@
       </div>
       <div class="column">
           <div class="info-item">
-              <img src="../assets/img/icons/stetic.svg" alt="Icono Estética">
-              <div>
+            <img src="../assets/img/icons/stetic.svg" alt="Icono Estética">
+              <div class="content en">
+                  <h3>Aesthetic</h3>
+                  <p>Available in a variety of designs and finishes to complement any home style.</p>
+              </div>
+              <div class="content es">
                   <h3>Estética</h3>
                   <p>Disponible en una variedad de diseños y acabados para complementar cualquier estilo de hogar.</p>
               </div>
           </div>
           <div class="info-item">
               <img src="../assets/img/icons/personality.svg" alt="Icono Personalización">
-              <div>
+            <div class="content en">
+              <h3>Customization</h3>
+              <p>We offer custom options to fit your specific needs and preferences.</p>
+            </div>
+              <div class="content es">
                   <h3>Personalización</h3>
                   <p>Ofrecemos opciones personalizadas para adaptarse a tus necesidades y preferencias específicas.</p>
               </div>
@@ -246,6 +273,15 @@
   <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="../assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- TRADUCTOR -->
+  <script>
+    document.getElementById('languageSwitch').addEventListener('change', function() {
+      var isChecked = this.checked;
+      document.querySelector('.en').style.display = isChecked ? 'none' : 'block';
+      document.querySelector('.es').style.display = isChecked ? 'block' : 'none';
+    });
+  </script>
 
   <!-- Main JS File -->
   <script src="../assets/js/main.js"></script>

@@ -64,7 +64,6 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
-  overflow-x: hidden;
 }
 
 a {
@@ -2309,3 +2308,26 @@ section,
   transform: rotate(90deg); /* Rota la flecha hacia abajo */
 }
 
+/*TRADUCCION*/
+.es { display: none; }
+        .en { display: block; }
+
+.language-en .content.en {
+  display: block;
+}
+
+.language-es .content.es {
+  display: block;
+}
+
+.language-switcher {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.language-switcher button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
