@@ -2,7 +2,7 @@
     border-bottom: 2px solid #ff0000; /* Línea inferior en cada columna */
     padding-bottom: 10px; /* Espacio debajo del contenido antes de la línea */
     margin-bottom: 10px; /* Espacio debajo de la línea para separar las columnas */
-
+    width: 100%;
 }
 .desc {
     /* Estilo general para la descripción */
@@ -33,4 +33,30 @@
     font-size: 24px; /* Tamaño del ícono */
     color: #000; /* Color del ícono */
     margin-right: 10px;
+  }
+
+  .icon:hover {
+    background-color: #ff0000; /* Color de fondo naranja */
+    color: white; /* Cambia el color del ícono a blanco */
+  }
+
+  /* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .icon {
+    width: 40px; /* Tamaño reducido del círculo */
+    height: 40px; /* Tamaño reducido del círculo */
+    font-size: 20px; /* Tamaño reducido del ícono */
+  }
+}
+
+@media (max-width: 576px) {
+  .icon {
+    width: 30px; /* Tamaño aún más reducido del círculo */
+    height: 30px; /* Tamaño aún más reducido del círculo */
+    font-size: 16px; /* Tamaño aún más reducido del ícono */
+  }
+}
+
+  #fila1_r{
+    margin-top: 40px;
   }
