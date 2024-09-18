@@ -239,3 +239,4 @@ faqItems.forEach(item => {
     item.classList.toggle('active');
   });
 });
+
