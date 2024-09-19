@@ -47,6 +47,19 @@
     height: 40px; /* Tamaño reducido del círculo */
     font-size: 20px; /* Tamaño reducido del ícono */
   }
+
+  .desc .tit {
+    display: none;
+    
+  }
+  
+.desc .sub {
+    font-weight: bold; /* Hacer el texto del título en negrita */
+    font-size: 0.9rem; /* Tamaño de fuente para la ubicación */
+    line-height: 1.0; /* Ajustar el espaciado entre líneas */
+  }
+
+
 }
 
 @media (max-width: 576px) {
@@ -57,6 +70,11 @@
   }
 }
 
+@media (max-width: 901px) {
+  .follow{
+    display: none;
+  }
+}
   #fila1_r{
     margin-top: 40px;
   }
