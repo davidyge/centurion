@@ -78,3 +78,9 @@
   #fila1_r{
     margin-top: 40px;
   }
+
+  .small-text {
+    font-style: none;       /* Opcional: para cursiva */
+    font-size: 0.875rem;      /* Tamaño de fuente pequeño */
+    text-transform: none;     /* Asegúrate de no transformar el texto a mayúsculas */
+  }
