@@ -150,21 +150,25 @@ h6 {
   z-index: 997;
 }
 
+/* Ocultar el logo por defecto */
 .header .logo {
-  line-height: 1;
+  display: none;
 }
 
-.header .logo img {
-  max-height: 36px;
-  margin-right: 8px;
-}
-
-.header .logo h1 {
-  font-size: 26px;
-  text-transform: uppercase;
-  margin: 0;
-  font-weight: 700;
-  color: var(--heading-color);
+/* Mostrar solo en móviles */
+@media (max-width: 1200px) {
+  .header .logo {
+    display: flex !important; /* Aseguramos que se muestre en móviles */
+    align-items: center;
+  }
+  
+  .header .logo h1 {
+    font-size: 26px;
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: 700;
+    color: var(--heading-color);
+  }
 }
 
 .header .btn-getstarted,
@@ -229,7 +233,7 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-color);
     padding: 18px 15px;
-    font-size: 18px;
+    font-size: 22px;
     font-family: var(--nav-font);
     font-weight: 400;
     display: flex;
