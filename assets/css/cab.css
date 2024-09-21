@@ -1,7 +1,7 @@
 #fila1{
     border-bottom: 2px solid #ff0000; /* Línea inferior en cada columna */
-    padding-bottom: 10px; /* Espacio debajo del contenido antes de la línea */
-    margin-bottom: 10px; /* Espacio debajo de la línea para separar las columnas */
+    padding-bottom: 2px; /* Espacio debajo del contenido antes de la línea */
+    margin-bottom: 2px; /* Espacio debajo de la línea para separar las columnas */
     width: 100%;
 
 }
