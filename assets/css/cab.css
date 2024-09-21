@@ -78,4 +78,58 @@
     text-transform: none;     /* Asegúrate de no transformar el texto a mayúsculas */
   }
 
-  
+  /*--------------------------------------------------------------
+# CARRUCEL Section
+--------------------------------------------------------------*/
+.busin .busi-wrap {
+  padding-left: 50px;
+  background-color: #ff0000;
+}
+
+.busin .busin-carousel,
+.busin .busin-slider {
+  overflow: hidden;
+}
+
+.busin .busi-item {
+  background-color: var(--surface-color);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: content-box;
+  padding: 30px 30px 30px 60px;
+  margin: 30px 15px;
+  min-height: 120px;
+  position: relative;
+}
+
+.busin .swiper-wrapper {
+  height: auto;
+}
+
+.busin .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.busin .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: var(--background-color);
+  opacity: 1;
+  border: 1px solid var(--accent-color);
+}
+
+.busin .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
+
+@media (max-width: 767px) {
+  .busin .busi-wrap {
+    padding-left: 0;
+  }
+
+  .busin .busin-carousel,
+  .busin .busin-slider {
+    overflow: hidden;
+  }
+
+}
