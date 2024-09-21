@@ -67,11 +67,27 @@
   .follow{
     display: none;
   }
+
+  .container .row .fila1_r{
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .container .row .log .imagelogo{
+    width: 150px;
+    height: 100px;
+  }
+   
 }
-  #fila1_r{
+
+@media (min-width:1200px){
+  .container .row .fila1_r{
     margin-top: 50px;
   }
+}
 
+
+  
   .small-text {
     font-style: none;       /* Opcional: para cursiva */
     font-size: 0.875rem;      /* Tamaño de fuente pequeño */
@@ -130,6 +146,17 @@
   .busin .busin-carousel,
   .busin .busin-slider {
     overflow: hidden;
+  }
+
+  .busin .busi-item {
+    background-color: var(--surface-color);
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    box-sizing: content-box;
+    padding: 30px 30px 30px 50px;
+    margin: 0px 0px;
+    min-height: 120px;
+    position: relative;
+    border-radius: 5px;
   }
 
 }
