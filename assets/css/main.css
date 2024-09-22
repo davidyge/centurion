@@ -174,19 +174,21 @@ h6 {
 @media (min-width: 1200px){
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
-  color: var(--contrast-color);
-  background: var(--accent-color);
+  color: black;
+  background: white;
   font-size: 14px;
   padding: 8px 25px;
   margin: 0 0 0 30px;
   border-radius: 4px;
   transition: 0.3s;
+  font-weight: 500;
 }
 
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
-  color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  color: black;
+  background: white;
+  border: 2px solid black;
 }
 
 }
@@ -249,7 +251,7 @@ h6 {
   .navmenu a:focus {
     color: white;
     padding: 18px 15px;
-    font-size: 18px;
+    font-size: 17px;
     font-family: var(--nav-font);
     font-weight: 400;
     display: flex;
@@ -275,7 +277,8 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: white;
+    font-weight: 600;
   }
 
   .navmenu .dropdown ul {
@@ -623,12 +626,56 @@ h6 {
   font-size: 13px;
 }
 
-/*footer mobile
+/* footer mobile */
 @media (max-width: 768px) {
   .footer {
-    text-align: center;
+    text-align: center; /* Centra todo el texto */
   }
-}*/
+
+  .footer .container .row {
+    justify-content: center; /* Centra los elementos dentro de la fila */
+  }
+
+  .footer .footer-about, 
+  .footer .footer-links {
+    text-align: center; /* Centra el texto en los divs individuales */
+    margin-bottom: 20px; /* Espacio entre las secciones */
+  }
+
+  .footer .footer-about .logo {
+    justify-content: center; /* Centra el logo */
+  }
+
+  .footer .footer-about .social-links {
+    justify-content: center; /* Centra los íconos sociales */
+  }
+
+  .footer .footer-about .social-links {
+    justify-content: center; /* Centra los íconos sociales */
+  }
+
+  .footer .social-links a {
+    margin: 0 10px; /* Espacio entre íconos sociales */
+  }
+
+  .footer .footer-links {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Alinea el texto en el centro */
+  }
+
+  .footer .footer-links ul {
+    padding: 0;
+    list-style: none; /* Elimina el estilo de los bullets */
+  }
+
+  .footer .footer-links ul li {
+    margin-bottom: 10px; /* Espacio entre cada enlace */
+  }
+
+
+}
 
  
 
