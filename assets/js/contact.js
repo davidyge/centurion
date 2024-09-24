@@ -1,3 +1,6 @@
+document.getElementById('loading').style.display = 'none';
+document.getElementById('sent-mess2').style.color = 'red';
+document.getElementById('error-message').style.display = 'block';
 const btn = document.getElementById('button');
 
 document.getElementById('form')
