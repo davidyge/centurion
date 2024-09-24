@@ -2188,6 +2188,7 @@ section,
   width: 100%;
   height: auto;
   border-radius: 4px;
+  
 }
 
 /****ICONOS****/
@@ -2410,3 +2411,21 @@ section,
   font-size: 16px;
   cursor: pointer;
 }
+
+/*TEXTO CENTURION overhead doors*/
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+      font-family: 'Roboto', sans-serif; /* Aplica la fuente bonita */
+      font-size: 10px; /* Ajusta el tamaño del texto */
+      padding: 20px;
+    }
+
+    p {
+      font-size: 19px; /* Ajusta el tamaño del párrafo */
+      line-height: 1.7; /* Mejora la legibilidad */
+      margin: 0;
+
+    }
