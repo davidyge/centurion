@@ -160,3 +160,19 @@
   }
 
 }
+/*MESSAGE FORM*/
+#sent-mess {
+  border-radius: 8px;
+  display: inline-block; /* Limita el ancho al contenido del texto */
+  padding: 5px 10px; /* Añade un poco de padding alrededor del texto */
+  background-color: #0BBCCC;
+  color: white;
+}
+
+#err-mess {
+  border-radius: 5px;
+  display: inline-block; /* Limita el ancho al contenido del texto */
+  padding: 5px 10px; /* Añade un poco de padding alrededor del texto */
+  color: white;
+  background-color: #ff0000;
+}
