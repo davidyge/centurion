@@ -16,7 +16,7 @@ const form = document.getElementById('form');
    const templateID = 'template_po03yhg';
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      btn.value = 'Send Email';
+     // btn.value = 'Send Email';
       send.style.display = 'block';
       // Oculta el mensaje de éxito después de 5 segundos (5000 milisegundos)
       setTimeout(() => {
