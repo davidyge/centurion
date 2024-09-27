@@ -232,3 +232,37 @@ faqItems.forEach(item => {
   });
 });
 
+
+document.addEventListener('DOMContentLoaded', function () {
+  const select = document.getElementById('language-selector');
+
+  // Establecer el estilo del select
+  select.style.backgroundColor = 'black'; // Fondo negro
+  select.style.color = 'white'; // Texto blanco
+  select.style.border = '1px solid white'; // Borde blanco
+
+  // Establecer el estilo de las opciones
+  const options = select.options;
+  for (let i = 0; i < options.length; i++) {
+    options[i].style.backgroundColor = 'black'; // Fondo negro para las opciones
+    options[i].style.color = 'white'; // Texto blanco para las opciones
+  }
+
+  // Opción adicional: establecer el color de fondo de las opciones en el evento focus
+  select.addEventListener('focus', function () {
+    this.style.backgroundColor = 'black'; // Fondo negro en el foco
+  });
+
+  select.addEventListener('blur', function () {
+    this.style.backgroundColor = 'black'; // Mantener fondo negro cuando no está en foco
+  });
+});
+
+/*LANGUAGE*/
+document.querySelector('.dropdown-toggle').addEventListener('click', function () {
+  const dropdown = document.querySelector('.language-dropdown');
+  dropdown.classList.toggle('open');
+});
+
+
+

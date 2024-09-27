@@ -251,3 +251,87 @@
     margin-left: 30%;
   }
 }
+
+/*IDIOMA WEB*/
+
+.language-dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 1px solid transparent; /* Borde inicial */
+}
+
+.dropdown-toggle:hover {
+  border-color: #ff3c01; /* Color del borde al hacer hover */
+    border-width: 2px; /* Grosor del borde aumentado al hacer hover */
+}
+
+.language-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  background-color: #000;
+  color: #fff;
+  display: none;
+  z-index: 1000;
+  border-radius: 10px;
+}
+
+.language-menu li {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.language-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: font-size 0.3s ease, color 0.3s ease; /* Transición suave en font-size y color */
+}
+
+.language-menu li:hover,
+.language-menu a:hover {
+  background-color: #333; /* Solo cambiar fondo al hover */
+  border-radius: 10px;
+}
+
+.language-dropdown.open .language-menu {
+  display: block;
+}
+
+.language-dropdown .dropdown-toggle i {
+  transition: transform 0.3s;
+}
+
+.language-dropdown.open .dropdown-toggle i {
+  transform: rotate(180deg);
+}
+
+/* Remueve el crecimiento del texto y otros cambios */
+.language-menu a:hover {
+  font-size: 13px; /* Ajuste leve en el tamaño de la fuente al hacer hover */
+  color: #f0f0f0;  /* Opcional: cambiar color con transición suave */
+}
+
+/*LANGUAGE MOBILE*/
+
+
+
+
