@@ -17,6 +17,7 @@
   }
   
 .desc .sub {
+    text-decoration: none !important;
     font-weight: bold; /* Hacer el texto del título en negrita */
     font-size: 1.6rem; /* Tamaño de fuente para la ubicación */
     line-height: 1.0; /* Ajustar el espaciado entre líneas */
@@ -208,4 +209,45 @@
 
 .social-icons a:hover {
   transform: scale(1.2); /* Aumenta el tamaño del ícono al pasar el mouse */
+}
+
+.social-icons-mobile a {
+  display: none; /* Asegura que el efecto de transformación funcione correctamente */
+}
+.navmenu .imagelogo-mobile{
+  display: none;
+}
+.social-icons-mobile {
+  display: none;
+}
+/*SOCIAL FOLLOW*/
+@media (max-width: 778px) {
+  .social-icons-mobile {
+    border-bottom: none !important;
+    text-decoration: none !important;
+    display: flex; /* Usa flexbox para alinear los íconos en una fila */
+    justify-content: center; /* Centra los íconos horizontalmente */
+    flex-wrap: wrap; /* Permite que los íconos se ajusten si hay poco espacio */
+    margin: 20px 0; /* Opcional: agrega margen superior e inferior */
+  }
+
+  .social-icons-mobile a {
+    border-bottom: none !important;
+    text-decoration: none !important;
+    display: block; /* Asegura que el efecto de transformación funcione correctamente */
+    transition: transform 0.3s ease; /* Transición suave para el efecto de crecimiento */
+    margin: 0 10px; /* Espacio entre los íconos */
+  }
+
+  .social-icons-mobile a:hover {
+    transform: scale(1.2); /* Aumenta el tamaño del ícono al pasar el mouse */
+  }
+
+  /*LOGO MOBILE*/
+  .navmenu .imagelogo-mobile{
+    display: block;
+    width: 140px;
+    height: 140px;
+    margin-left: 30%;
+  }
 }
