@@ -180,12 +180,11 @@ h6 {
 }
 
 }
-
-@media (max-width: 1200px) {
-  .header .logo {
+/*.header .logo {
     order: 1;
-  }
-
+  }*/
+@media (max-width: 1200px) {
+  
   .header .btn-getstarted {
     display: none;
   }

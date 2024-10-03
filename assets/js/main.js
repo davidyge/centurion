@@ -232,37 +232,25 @@ faqItems.forEach(item => {
   });
 });
 
+/*LENGUAJE WEB*/
 
 document.addEventListener('DOMContentLoaded', function () {
-  const select = document.getElementById('language-selector');
-
-  // Establecer el estilo del select
-  select.style.backgroundColor = 'black'; // Fondo negro
-  select.style.color = 'white'; // Texto blanco
-  select.style.border = '1px solid white'; // Borde blanco
-
-  // Establecer el estilo de las opciones
-  const options = select.options;
-  for (let i = 0; i < options.length; i++) {
-    options[i].style.backgroundColor = 'black'; // Fondo negro para las opciones
-    options[i].style.color = 'white'; // Texto blanco para las opciones
-  }
-
-  // Opción adicional: establecer el color de fondo de las opciones en el evento focus
-  select.addEventListener('focus', function () {
-    this.style.backgroundColor = 'black'; // Fondo negro en el foco
+  // Evento para manejar la apertura del menú de idiomas en desktop
+  document.querySelector('.dropdown-toggle').addEventListener('click', function () {
+    const dropdown = document.querySelector('.language-menu');
+    dropdown.classList.toggle('open'); // Alternar la clase 'open'
   });
 
-  select.addEventListener('blur', function () {
-    this.style.backgroundColor = 'black'; // Mantener fondo negro cuando no está en foco
-  });
+   // Evento para manejar la apertura del menú de opciones en móvil
+   const toggleButton = document.querySelector('.toggle-button-mobile');
+   const menuList = document.querySelector('.menu-list-mobile');
+ 
+   toggleButton.addEventListener('click', function () {
+     menuList.classList.toggle('active'); // Alterna la clase 'active' para mostrar/ocultar
+   });
 });
 
-/*LANGUAGE*/
-document.querySelector('.dropdown-toggle').addEventListener('click', function () {
-  const dropdown = document.querySelector('.language-dropdown');
-  dropdown.classList.toggle('open');
-});
+
 
 
 

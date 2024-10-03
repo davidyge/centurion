@@ -252,7 +252,7 @@
   }
 }
 
-/*IDIOMA WEB*/
+/*LANGUAGE WEB*/
 
 .language-dropdown {
   position: relative;
@@ -274,7 +274,7 @@
 
 .dropdown-toggle:hover {
   border-color: #ff3c01; /* Color del borde al hacer hover */
-    border-width: 2px; /* Grosor del borde aumentado al hacer hover */
+  border-width: 2px; /* Grosor del borde aumentado al hacer hover */
 }
 
 .language-menu {
@@ -312,7 +312,7 @@
   border-radius: 10px;
 }
 
-.language-dropdown.open .language-menu {
+.language-menu.open {
   display: block;
 }
 
@@ -330,8 +330,53 @@
   color: #f0f0f0;  /* Opcional: cambiar color con transición suave */
 }
 
-/*LANGUAGE MOBILE*/
-
-
-
-
+/*LANGUAGE MOBILE COLOR BLANCO*/
+/*Restringir vista para web*/
+/*Visualizacion en mobile*/
+.dropdown-container-mobile {
+  display: none;
+}
+@media (max-width: 778px) {
+  .dropdown-container-mobile {
+    position: relative;
+    display: inline-block;
+    margin-left: 50px;
+  }
+  
+  .toggle-button-mobile {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .menu-list-mobile {
+    display: none; /* Ocultar por defecto */
+    list-style-type: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+    position: absolute;
+    background-color: #000;
+    border-radius: 5px;
+    z-index: 10; /* Asegura que el menú esté por encima de otros elementos */
+  }
+  
+  .menu-list-mobile.active {
+    display: block; /* Mostrar el menú cuando tenga la clase 'active' */
+  }
+  
+  .menu-list-mobile li {
+    padding: 10px;
+  }
+  
+  .menu-list-mobile li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .menu-list-mobile li:hover {
+    background-color: #333; /* Cambiar el color de fondo al pasar el mouse */
+  }
+}
