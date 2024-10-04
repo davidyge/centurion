@@ -339,27 +339,33 @@
 @media (max-width: 778px) {
   .dropdown-container-mobile {
     position: relative;
-    display: inline-block;
+    display: flex;
     margin-left: 50px;
+
   }
   
   .toggle-button-mobile {
-    background-color: #000;
+    background-color: #203364;
     color: #fff;
-    border: none;
-    padding: 8px 14px;
+    padding: 4px 12px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
+  }
+  .toggle-button-mobile:hover {
+    border-color: #ffffff; /* Color del borde al hacer hover */
+    border-width: 1px; 
   }
   
   .menu-list-mobile {
+    left: 10%;
     display: none; /* Ocultar por defecto */
     list-style-type: none;
+    width: 70%;
     padding: 0;
-    margin: 5px 0 0 0;
+    margin: 40px 0 0 0;
     position: absolute;
-    background-color: #000;
-    border-radius: 5px;
+    background-color: #203364;
+    border-radius: 10px;
     z-index: 10; /* Asegura que el menú esté por encima de otros elementos */
   }
   
@@ -368,7 +374,7 @@
   }
   
   .menu-list-mobile li {
-    padding: 10px;
+    padding: 8px 10px;
   }
   
   .menu-list-mobile li a {
@@ -377,6 +383,7 @@
   }
   
   .menu-list-mobile li:hover {
-    background-color: #333; /* Cambiar el color de fondo al pasar el mouse */
+    border-radius: 10px;
+    background-color: #243d7e; /* Cambiar el color de fondo al pasar el mouse */
   }
 }
