@@ -387,3 +387,21 @@
     background-color: #243d7e; /* Cambiar el color de fondo al pasar el mouse */
   }
 }
+/**/
+.pagos-online .btn-get-pagos{
+  color: #ffffff;
+}
+
+.pagos-online .btn-pagos{
+  background-color: #ff3c01;
+  border-radius: 6px;
+  padding: 10px 18px 10px 18px;
+  border: none;
+}
+
+.pagos-online .btn-pagos:hover{
+  background-color: #f96f45;
+  border-radius: 6px;
+  padding: 10px 18px 10px 18px;
+  border: none;
+}
