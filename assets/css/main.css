@@ -2463,3 +2463,57 @@ section,
       margin: 0;
 
     }
+
+    /*PLAY BUTTON PORTADA*/
+    .play-button {
+      background-color: white;
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .play-button-md {
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      background-color: rgba(255, 0, 0, 0.2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: pulse-bg 2s infinite; /* Animación infinita */
+    }
+    
+    .play-button-icon {
+      background-color: red;
+      border-radius: 50%;
+      height: 35px;
+      width: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: pulse-icon 2s infinite ease-in-out; /* Animación infinita */
+    }
+    
+    /* Animación para el background que se expande y se encoge */
+    @keyframes pulse-bg {
+      0%, 100% {
+        transform: scale(1);
+        background-color: rgba(255, 254, 254, 0.2);
+      }
+      50% {
+        transform: scale(1.01);
+        background-color: rgba(255, 0, 0, 0.2);
+      }
+    }
+
+    .bi-play-fill{
+      margin-top: 10%;
+      margin-left: 8%;
+    }
+    
+  
+    
+    
