@@ -1,7 +1,12 @@
-let slideIndex = [0, 0]; // Array para múltiples sliders
+let numSliders = 20; // Definimos el número de sliders
+let slideIndex = new Array(numSliders).fill(0); // Inicializamos el índice de cada slider a 0
+
+// Definimos un array de arrays para cada slider, puedes añadir las rutas de las imágenes de cada slider
 let slides = [
-  ["assets/img/Gopeners/p3.webp", "assets/img/Gopeners/p1.webp", "assets/img/Gopeners/p2.webp"],
-  ["assets/img/Gopeners/p4.webp", "assets/img/Gopeners/p3.webp", "assets/img/Gopeners/p2.webp"]
+  ["assets/img/Gopeners/p1.webp", "assets/img/Gopeners/p2.webp", "assets/img/Gopeners/p3.webp"],
+  ["assets/img/Gopeners/p4.webp", "assets/img/Gopeners/p5.webp", "assets/img/Gopeners/p5.webp"],
+  // Añade las imágenes correspondientes a cada slider
+  // Hasta llegar al slider 20
 ];
 
 // Función para mostrar la imagen correspondiente del slider
@@ -24,9 +29,9 @@ function prevSlide(sliderIndex) {
 
 // Mostrar la primera imagen de cada slider al cargar la página
 document.addEventListener("DOMContentLoaded", function() {
-  showSlide(0); // Muestra la primera imagen del primer slider
-  showSlide(1); // Muestra la primera imagen del segundo slider
+  for (let i = 0; i < numSliders; i++) {
+    showSlide(i); // Muestra la primera imagen de cada slider
+  }
 });
 
 console.log('carrucel.js cargado correctamente');
-

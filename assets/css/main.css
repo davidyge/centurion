@@ -2531,21 +2531,26 @@ section,
       transform: translateY(-50%);
       background-color: rgba(0, 0, 0, 0.5);
       color: white;
+      font-weight: 900;
       border: none;
       padding: 10px;
       cursor: pointer;
     }
     
     .prev-btn {
-      left: 10px;
+      left: 15px;
     }
     
     .next-btn {
-      right: 10px;
+      right: 15px;
     }
     
     button:focus {
       outline: none;
+    }
+
+    .container .btn-forma{
+      border-radius: 50%;
     }
     
     
