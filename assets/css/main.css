@@ -2528,7 +2528,7 @@ section,
     
     .prev-btn, .next-btn {
       position: absolute;
-      top: 18%;
+      top: 22%;
       transform: translateY(-50%);
       background-color: rgba(0, 0, 0, 0.5);
       color: white;

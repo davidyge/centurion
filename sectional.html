@@ -226,8 +226,8 @@
       </div>
       <div class="container" data-aos="fade-up">
         <div class="row">
-          <div class="col-12 col-sm-6">
-            <img src="assets/img/sectional/insulated1.webp" alt="image of Commercial-Grade Steel Doors" class="card-img">
+          <div class="col-12 col-sm-6 image-slider">
+            <img src="assets/img/sectional/insulated1.webp" alt="image of Commercial-Grade Steel Doors" class="slider-image">
             <div class="card-content">
               <h2>Insulated Sandwich</h2>
               <p>Functional and durable, our micro-grooved insulated sandwich garage bay doors come in a variety of gauges with insulation options to suit your business needs, building type, and climate.</p>
@@ -236,11 +236,14 @@
                 <li><span class="checkbox"><img src="assets/img/icons/check.svg" alt="check icon"></span> Insulated for thermal efficiency with R-values from R-10.29 to R-26.89</li>
                 <li><span class="checkbox"><img src="assets/img/icons/check.svg" alt="check icon"></span> Customizable with a variety of standard colors and 188 powder coat options!</li>
               </ul>
+              <!-- Resto del contenido -->
+              <button style="background-color: rgba(220, 220, 220, 0.5);" class="prev-btn btn-forma" onclick="prevSlide(0)">&#10094;</button>
+              <button style="background-color: rgba(220, 220, 220, 0.5);" class="next-btn btn-forma" onclick="nextSlide(0)">&#10095;</button>
               <a href="#contact"><button style="font-weight: bold;">MORE INFORMATION</button></a>
             </div>
           </div>
-          <div class="col-12 col-sm-6">
-            <img src="assets/img/sectional/ribbed1.webp" alt="image of Insulation for Energy Efficiency" class="card-img">
+          <div class="col-12 col-sm-6 image-slider">
+            <img src="assets/img/sectional/ribbed1.webp" alt="image of Insulation for Energy Efficiency" class="slider-image">
             <div class="card-content">
               <h2>Ribbed Steel</h2>
               <p>Our steel garage doors provide powerful performance and reliability for commercial, warehouse, and industrial use.</p>
@@ -250,16 +253,20 @@
                 <li><span class="checkbox"><img src="assets/img/icons/check.svg" alt="check icon"></span> High performance and everyday reliability</li>
                 <li><span class="checkbox"><img src="assets/img/icons/check.svg" alt="check icon"></span> Long lasting durability</li>
               </ul>
+              <!-- Resto del contenido -->
+              <button style="background-color: rgba(220, 220, 220, 0.5);" class="prev-btn btn-forma" onclick="prevSlide(1)">&#10094;</button>
+              <button style="background-color: rgba(220, 220, 220, 0.5);" class="next-btn btn-forma" onclick="nextSlide(1)">&#10095;</button>
               <a href="#contact"><button style="font-weight: bold;">MORE INFORMATION</button></a>
             </div>
           </div>
         </div>
       </div>
+      
       <br>
       <div class="container" data-aos="fade-up">
         <div class="row">
-          <div class="col-12 col-sm-6">
-            <img src="assets/img/sectional/fullview1.webp" alt="image of Commercial-Grade Steel Doors" class="card-img">
+          <div class="col-12 col-sm-6 image-slider">
+            <img src="assets/img/sectional/fullview1.webp" alt="image of Commercial-Grade Steel Doors" class="slider-image">
             <div class="card-content">
               <h2>Commercial Full-View Aluminum</h2>
               <p>Get a clean, modern look combined with flexibility, durability, and quality. Our commercial glass garage doors are an aesthetically-pleasing choice – making them ideal for your home or business.</p>
@@ -268,11 +275,14 @@
                 <li><span class="checkbox"><img src="assets/img/icons/check.svg" alt="check icon"></span> Wide selection of glass options</li>
                 <li><span class="checkbox"><img src="assets/img/icons/check.svg" alt="check icon"></span> Removable inside retainers for easy window replacement</li>
               </ul>
+               <!-- Resto del contenido -->
+               <button style="background-color: rgba(220, 220, 220, 0.5);" class="prev-btn btn-forma" onclick="prevSlide(2)">&#10094;</button>
+               <button style="background-color: rgba(220, 220, 220, 0.5);" class="next-btn btn-forma" onclick="nextSlide(2)">&#10095;</button>
               <a href="#contact"><button style="font-weight: bold;">MORE INFORMATION</button></a>
             </div>
           </div>
-          <div class="col-12 col-sm-6">
-            <img src="assets/img/sectional/p1.webp" alt="image of Commercial-Grade Steel Doors" class="card-img">
+          <div class="col-12 col-sm-6 image-slider" >
+            <img src="assets/img/sectional/p1.webp" alt="image of Commercial-Grade Steel Doors" class="slider-image">
             <div class="card-content">
               <h2>Commercial-Grade Steel Doors</h2>
               <p>Centurion Overhead Doors provides durable, commercial-grade steel garage doors suitable for various commercial properties. These doors are designed to withstand heavy usage and provide robust security for businesses.</p>
@@ -573,6 +583,18 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/contact.js"></script>
+
+ <script src="assets/js/carrucel.js"></script>
+ <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    initializeSlides([
+    ["assets/img/sectional/insulated1.webp", "assets/img/sectional/insulated2.webp", "assets/img/sectional/insulated3.webp","assets/img/sectional/insulated4.webp","assets/img/sectional/insulated5.webp"],
+    ["assets/img/sectional/ribbed1.webp", "assets/img/sectional/ribbed2.webp", "assets/img/sectional/ribbed3.webp", "assets/img/sectional/ribbed4.webp", "assets/img/sectional/ribbed5.webp"],
+    ["assets/img/sectional/fullview1.webp","assets/img/sectional/fullview2.webp"]
+    ]);
+  });
+</script>
+
 
   <!--FORM CLIENTS-->
 

@@ -1,55 +1,29 @@
-let numSliders = 20; // Definimos el número de sliders
-let slideIndex = new Array(numSliders).fill(0); // Inicializamos el índice de cada slider a 0
+// carousel.js
+let slideIndex = [];
+let slides = [];
 
-// Definimos un array de arrays para cada slider, puedes añadir las rutas de las imágenes de cada slider
-let slides = [
-  // de 0 a 10 filas (Residential)
-  ["assets/img/residential/planks1.webp", "assets/img/residential/planks2.webp", "assets/img/residential/planks3.webp"],
-  ["assets/img/residential/sterling1.webp", "assets/img/residential/sterling2.webp"],
-  ["assets/img/residential/skyline1.webp", "assets/img/residential/skyline2.webp", "assets/img/residential/skyline3.webp"],
-  ["assets/img/residential/shoreline1.webp", "assets/img/residential/shoreline2.webp", "assets/img/residential/shoreline3.webp"],
-  ["assets/img/residential/stamped1.webp"],
-  ["assets/img/residential/raised1.webp", "assets/img/residential/raised2.webp", "assets/img/residential/raised3.webp", "assets/img/residential/raised4.webp"],
-  ["assets/img/residential/recessed1.webp", "assets/img/residential/recessed2.webp", "assets/img/residential/recessed3.webp"],
-  ["assets/img/residential/aluminium1.webp", "assets/img/residential/aluminium2.webp", "assets/img/residential/aluminium3.webp",  "assets/img/residential/aluminium4.webp"],
-  ["assets/img/residential/shoreline1.webp", "assets/img/residential/shoreline2.webp", "assets/img/residential/shoreline3.webp"],
-  ["assets/img/residential/shoreline1.webp", "assets/img/residential/shoreline2.webp", "assets/img/residential/shoreline3.webp"],
+// Función para configurar las imágenes del slider específico de cada HTML
+function initializeSlides(slidesArray) {
+  slides = slidesArray;
+  slideIndex = new Array(slides.length).fill(0);
+  document.addEventListener("DOMContentLoaded", function() {
+    slides.forEach((_, i) => showSlide(i));
+  });
+}
 
-  // de 11 a (Comercial) - Sectional Overhead Doors
-  ["assets/img/residential/shoreline1.webp", "assets/img/residential/shoreline2.webp", "assets/img/residential/shoreline3.webp"],
-  ["assets/img/residential/shoreline1.webp", "assets/img/residential/shoreline2.webp", "assets/img/residential/shoreline3.webp"],
-  ["assets/img/residential/shoreline1.webp", "assets/img/residential/shoreline2.webp", "assets/img/residential/shoreline3.webp"],
-  ["assets/img/residential/shoreline1.webp", "assets/img/residential/shoreline2.webp", "assets/img/residential/shoreline3.webp"],
-  ["assets/img/residential/shoreline1.webp", "assets/img/residential/shoreline2.webp", "assets/img/residential/shoreline3.webp"],
-  ["assets/img/residential/shoreline1.webp", "assets/img/residential/shoreline2.webp", "assets/img/residential/shoreline3.webp"],
-  ["assets/img/residential/shoreline1.webp", "assets/img/residential/shoreline2.webp", "assets/img/residential/shoreline3.webp"],
-
-  // de  a (Comercial) - Roll-Up Garage Doors
-];
-
-// Función para mostrar la imagen correspondiente del slider
 function showSlide(sliderIndex) {
-  let sliderImages = document.querySelectorAll('.image-slider')[sliderIndex].querySelector('.slider-image');
+  const sliderImages = document.querySelectorAll('.image-slider')[sliderIndex].querySelector('.slider-image');
   sliderImages.src = slides[sliderIndex][slideIndex[sliderIndex]];
 }
 
-// Función para ir a la siguiente imagen
 function nextSlide(sliderIndex) {
   slideIndex[sliderIndex] = (slideIndex[sliderIndex] + 1) % slides[sliderIndex].length;
   showSlide(sliderIndex);
 }
 
-// Función para ir a la imagen anterior
 function prevSlide(sliderIndex) {
   slideIndex[sliderIndex] = (slideIndex[sliderIndex] - 1 + slides[sliderIndex].length) % slides[sliderIndex].length;
   showSlide(sliderIndex);
 }
 
-// Mostrar la primera imagen de cada slider al cargar la página
-document.addEventListener("DOMContentLoaded", function() {
-  for (let i = 0; i < numSliders; i++) {
-    showSlide(i); // Muestra la primera imagen de cada slider
-  }
-});
-
-console.log('carrucel.js cargado correctamente');
+console.log('carousel.js cargado correctamente');
