@@ -3,8 +3,10 @@ let slideIndex = new Array(numSliders).fill(0); // Inicializamos el índice de c
 
 // Definimos un array de arrays para cada slider, puedes añadir las rutas de las imágenes de cada slider
 let slides = [
-  ["assets/img/residential/planks1.webp", "assets/img/Gopeners/p2.webp", "assets/img/Gopeners/p3.webp"],
-  ["assets/img/residential/sterling1.webp", "assets/img/Gopeners/p5.webp", "assets/img/Gopeners/p5.webp"],
+  ["assets/img/residential/planks1.webp", "assets/img/residential/planks2.webp", "assets/img/residential/planks3.webp"],
+  ["assets/img/residential/sterling1.webp", "assets/img/residential/sterling2.webp"],
+  ["assets/img/residential/skyline1.webp", "assets/img/residential/skyline2.webp", "assets/img/residential/skyline1.webp"],
+  ["assets/img/residential/shoreline1.webp", "assets/img/residential/shoreline2.webp", "assets/img/residential/shoreline3.webp"]
   // Añade las imágenes correspondientes a cada slider
   // Hasta llegar al slider 20
 ];
