@@ -2528,7 +2528,7 @@ section,
     
     .prev-btn, .next-btn {
       position: absolute;
-      top: 20%;
+      top: 18%;
       transform: translateY(-50%);
       background-color: rgba(0, 0, 0, 0.5);
       color: white;
@@ -2554,6 +2554,8 @@ section,
       border-radius: 50%;
     }
     
-    
-    
-    
+    @media (max-width: 780px) {
+      .prev-btn, .next-btn {
+        top: 10%;
+      }
+    }

@@ -3,12 +3,28 @@ let slideIndex = new Array(numSliders).fill(0); // Inicializamos el índice de c
 
 // Definimos un array de arrays para cada slider, puedes añadir las rutas de las imágenes de cada slider
 let slides = [
+  // de 0 a 10 filas (Residential)
   ["assets/img/residential/planks1.webp", "assets/img/residential/planks2.webp", "assets/img/residential/planks3.webp"],
   ["assets/img/residential/sterling1.webp", "assets/img/residential/sterling2.webp"],
-  ["assets/img/residential/skyline1.webp", "assets/img/residential/skyline2.webp", "assets/img/residential/skyline1.webp"],
-  ["assets/img/residential/shoreline1.webp", "assets/img/residential/shoreline2.webp", "assets/img/residential/shoreline3.webp"]
-  // Añade las imágenes correspondientes a cada slider
-  // Hasta llegar al slider 20
+  ["assets/img/residential/skyline1.webp", "assets/img/residential/skyline2.webp", "assets/img/residential/skyline3.webp"],
+  ["assets/img/residential/shoreline1.webp", "assets/img/residential/shoreline2.webp", "assets/img/residential/shoreline3.webp"],
+  ["assets/img/residential/stamped1.webp"],
+  ["assets/img/residential/raised1.webp", "assets/img/residential/raised2.webp", "assets/img/residential/raised3.webp", "assets/img/residential/raised4.webp"],
+  ["assets/img/residential/recessed1.webp", "assets/img/residential/recessed2.webp", "assets/img/residential/recessed3.webp"],
+  ["assets/img/residential/aluminium1.webp", "assets/img/residential/aluminium2.webp", "assets/img/residential/aluminium3.webp",  "assets/img/residential/aluminium4.webp"],
+  ["assets/img/residential/shoreline1.webp", "assets/img/residential/shoreline2.webp", "assets/img/residential/shoreline3.webp"],
+  ["assets/img/residential/shoreline1.webp", "assets/img/residential/shoreline2.webp", "assets/img/residential/shoreline3.webp"],
+
+  // de 11 a (Comercial) - Sectional Overhead Doors
+  ["assets/img/residential/shoreline1.webp", "assets/img/residential/shoreline2.webp", "assets/img/residential/shoreline3.webp"],
+  ["assets/img/residential/shoreline1.webp", "assets/img/residential/shoreline2.webp", "assets/img/residential/shoreline3.webp"],
+  ["assets/img/residential/shoreline1.webp", "assets/img/residential/shoreline2.webp", "assets/img/residential/shoreline3.webp"],
+  ["assets/img/residential/shoreline1.webp", "assets/img/residential/shoreline2.webp", "assets/img/residential/shoreline3.webp"],
+  ["assets/img/residential/shoreline1.webp", "assets/img/residential/shoreline2.webp", "assets/img/residential/shoreline3.webp"],
+  ["assets/img/residential/shoreline1.webp", "assets/img/residential/shoreline2.webp", "assets/img/residential/shoreline3.webp"],
+  ["assets/img/residential/shoreline1.webp", "assets/img/residential/shoreline2.webp", "assets/img/residential/shoreline3.webp"],
+
+  // de  a (Comercial) - Roll-Up Garage Doors
 ];
 
 // Función para mostrar la imagen correspondiente del slider
