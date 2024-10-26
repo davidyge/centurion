@@ -2208,10 +2208,11 @@ section,
 }
 
 .checkbox img {
-  width: 100%;
+  width: 20px; /* Ajusta el tamaño que prefieras */
   height: auto;
-  display: block;
+  display: inline-block;
 }
+
 .text-section {
   max-width: 50%;
 }
@@ -2527,7 +2528,7 @@ section,
     
     .prev-btn, .next-btn {
       position: absolute;
-      top: 40%;
+      top: 20%;
       transform: translateY(-50%);
       background-color: rgba(0, 0, 0, 0.5);
       color: white;

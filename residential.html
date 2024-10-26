@@ -214,20 +214,22 @@
     </div>
 
       <div class="container" data-aos="fade-up">
-      </div><div class="page-title" data-aos="fade">
-        <nav class="breadcrumbs">
-          <div class="container">
-            <ol>
-              <li><a href="index.html">Home</a></li>
-              <li class="current">Residential</li>
-            </ol>
-          </div>
-        </nav>
+        <div class="page-title" data-aos="fade">
+          <nav class="breadcrumbs">
+            <div class="container">
+              <ol>
+                <li><a href="index.html">Home</a></li>
+                <li class="current">Residential</li>
+              </ol>
+            </div>
+          </nav>
+        </div>
       </div>
+      
       <div class="container" data-aos="fade-up">
         <div class="row">
-          <div class="col-12 col-sm-6">
-            <img src="assets/img/residential/planks1.webp" alt="image of Steel Garage Doors" class="card-img">
+          <div class="col-12 col-sm-6 image-slider">
+            <img src="assets/img/residential/planks1.webp" alt="image of Steel Garage Doors" class="slider-image">
             <div class="card-content">
               <h2>Planks Hero</h2>
               <p>If you like the look of wooden garage doors but don’t want the maintenance, a wood-look garage door could be the perfect match for your home. The recessed grooves create subtle planks that add texture and depth to this contemporary door.</p>
@@ -237,11 +239,14 @@
                 <li><span class="checkbox"><img src="assets/img/icons/check.svg" alt="check icon"></span> Insulated for thermal efficiency with R-values of R-10.29 or R-17.54</li>
                 <li><span class="checkbox"><img src="assets/img/icons/check.svg" alt="check icon"></span> Comes with a limited lifetime warranty</li>
               </ul>
+              <!-- Resto del contenido -->
+              <button style="background-color: rgba(220, 220, 220, 0.5);" class="prev-btn btn-forma" onclick="prevSlide(0)">&#10094;</button>
+              <button style="background-color: rgba(220, 220, 220, 0.5);" class="next-btn btn-forma" onclick="nextSlide(0)">&#10095;</button>
               <a href="#contact"><button style="font-weight: bold;">MORE INFORMATION</button></a>
             </div>
           </div>
-          <div class="col-12 col-sm-6">
-            <img src="assets/img/residential/sterling1.webp" alt="image of Insulated Garage Doors" class="card-img">
+          <div class="col-12 col-sm-6 image-slider">
+            <img src="assets/img/residential/sterling1.webp" alt="image of Insulated Garage Doors" class="slider-image">
             <div class="card-content">
               <h2>Sterling Doors</h2>
               <p>Our Sterling doors combine liquid-smooth flush steel panels and frameless tinted glass for an ultra-sleek, minimalist garage door design that perfectly complements any contemporary home. Because sometimes, less is more.</p>
@@ -254,6 +259,9 @@
                 <li style="margin-left: 20px;"><span class="checkbox"><img src="assets/img/icons/check.svg" alt="check icon" style="width: 16px; height: 18px;"></span>35 colors</li>
                 <li style="margin-left: 20px;"><span class="checkbox"><img src="assets/img/icons/check.svg" alt="check icon" style="width: 16px; height: 18px;"></span>Fully-customizable panel layouts</li>
               </ul>
+                <!-- Resto del contenido -->
+                <button style="background-color: rgba(220, 220, 220, 0.5);" class="prev-btn btn-forma" onclick="prevSlide(1)">&#10094;</button>
+                <button style="background-color: rgba(220, 220, 220, 0.5);" class="next-btn btn-forma" onclick="nextSlide(1)">&#10095;</button>
               <a href="#contact"><button style="font-weight: bold;">MORE INFORMATION</button></a>
             </div>
           </div>
@@ -692,6 +700,8 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/contact.js"></script>
+
+  <script src="assets/js/carrucel.js"></script>
 
   <!--FORM CLIENTS-->
 
