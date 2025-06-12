@@ -12,7 +12,7 @@ const form = document.getElementById('form');
  form.addEventListener('submit', function(event) {
    event.preventDefault();
    btn.value = 'Sending...'; // Cambia el texto del botón mientras envía
-   const serviceID = 'service_196494s';
+   const serviceID = 'service_6rzmgza';
    const templateID = 'template_po03yhg';
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
