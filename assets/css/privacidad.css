@@ -1,0 +1,57 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.encabezado {
+  background-color: #d92121; /* Color rojo principal del sitio */
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 4px solid #002856; /* Azul oscuro del logo */
+}
+
+.titulo-principal {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.subtitulo {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.contenido {
+  padding: 2rem 10%;
+}
+
+h2 {
+  color: #002856;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  color: #d92121;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+a {
+  color: #002856;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
