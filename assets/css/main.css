@@ -2767,3 +2767,31 @@ section,
     margin-bottom: 1.2rem;
   }
 }
+
+/* Estilo personalizado del popup */
+    .popup-img {
+        background-image: url('../../imagenes/auto.png'); /* SIN la barra / al inicio */
+        background-size: cover;
+        background-position: center;
+        min-height: 500px; /* Asegura altura visible */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .modal-content {
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .popup-text h5 {
+      font-weight: bold;
+    }
+    .popup-text p {
+      margin: 0;
+    }
+    .text-data-oferta{
+      margin-top: 100px;
+    }
+
+    .modal-dialog.modal-lg {
+      max-width: 900px; /* o más si lo necesitas */
+    }

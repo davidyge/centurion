@@ -1160,6 +1160,43 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
   </a>
 
+  <div class="modal fade" id="promoModal" tabindex="-1" aria-labelledby="promoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content p-0">
+        <div class="row g-0">
+          <div class="col-md-6 popup-img d-none d-md-block">
+            <!-- Imagen de fondo -->
+          </div>
+          <div class="col-md-6 p-4 popup-text d-flex justify-content-center align-items-center">
+            <div class="position-absolute top-0 end-0 p-3">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="text-center">
+              <h5>¡Obtén un 10% de descuento exclusivo!</h5>
+              <p>Regístrate ahora y recibe un <strong>10% de descuento</strong> en tu primera compra o servicio. ¡No dejes pasar esta oportunidad!</p>
+              <a href="tel:+51987654321" class="btn btn-success mt-3">
+                📞 Llamar ahora
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Bootstrap y JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Mostrar el modal automáticamente después de unos segundos
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      const myModal = new bootstrap.Modal(document.getElementById('promoModal'));
+      myModal.show();
+    }, 3000); // 3000 milisegundos = 3 segundos
+  });
+</script>
+
   <!--SRCIPT
   <script>
     function makeCall() {
@@ -1187,6 +1224,7 @@
   <script type="text/javascript">
     emailjs.init('8Q4oHL_47KHuKM009')
   </script>
+
 
 </body>
 
