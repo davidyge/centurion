@@ -2770,21 +2770,38 @@ section,
 
 /* Estilo personalizado del popup */
     .popup-img {
-        background-image: url('../../imagenes/prueba_a.png'); /* SIN la barra / al inicio */
-        background-size: cover;
-        background-position: center;
-        min-height: 500px; /* Asegura altura visible */
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+      background-image: url('../../imagenes/oferta-ingles.png'); /* SIN la barra / al inicio */
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      max-width: 800px;
+      aspect-ratio: 12 / 7;
+      border-radius: 12px;
+      margin: 0 auto;
     }
 
     .popup-img2 {
-        background-image: url('../../imagenes/oferta-español.png'); /* SIN la barra / al inicio */
-        background-size: cover;
-        background-position: center;
-        min-height: 500px; /* Asegura altura visible */
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+      background-image: url('../../imagenes/oferta-español.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      max-width: 800px;
+      aspect-ratio: 12 / 7;
+      border-radius: 12px;
+      margin: 0 auto;
+    }
+
+  /* Responsive ajustes para móviles */
+    @media (max-width: 576px) {
+      .popup-img,
+      .popup-img2 {
+        max-width: 90%;
+        aspect-ratio: 12 / 7; /* Mantén la relación */
+        background-size: contain;
+        height: auto; /* O quítala */
+      }
     }
 
     .modal-content {
